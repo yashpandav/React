@@ -1,10 +1,9 @@
 import './compo.css';
 
-function Compo(){
+function Compo(props){
+    const compon = props.name;
     return(
-        <div className='compo'>
-            <h1>Yash Pandav</h1>
-        </div>
+        <h1>{compon}</h1>
     );
 }
 

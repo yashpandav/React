@@ -1,8 +1,15 @@
 import './secondcompo.css'
 
-function Sec_Comp(){
+function Sec_Comp(props){
+    const date = props.date;
+    const month = props.month;
+    const year = props.year;
     return(
-        <div className='second-compo'>Hello Yash</div>
+        <div>
+            <span>{date}</span>
+            <span>{month}</span>
+            <span>{year}</span>
+        </div>
     );
 }
 

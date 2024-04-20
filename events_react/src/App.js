@@ -1,6 +1,7 @@
 import './App.css';
 import Product from './products.js';
 import React from 'react';
+import ProductForm from './productForm.js';
 
 function App() {
   const products = [
@@ -30,7 +31,12 @@ function App() {
     },
   ];
 
-  return <Product items={products} />;
+  return(
+    <div>
+      <ProductForm></ProductForm>
+      <Product items={products} />
+    </div>
+  ); 
 }
 
 export default App;

@@ -1,14 +1,11 @@
 import './secondcompo.css'
 
 function Sec_Comp(props){
-    const date = props.date;
-    const month = props.month;
-    const year = props.year;
+    const compon = props.className; 
     return(
         <div>
-            <span>{date}</span>
-            <span>{month}</span>
-            <span>{year}</span>
+            <h1 className={compon}>THIS IS A PARENT COMPONENETS</h1>
+            {props.children}
         </div>
     );
 }

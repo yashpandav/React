@@ -1,9 +1,11 @@
 import './compo.css';
 
 function Compo(props){
-    const compon = props.name;
+    const compon = props.className;
     return(
-        <h1>{compon}</h1>
+        <div>
+            <h1 className={compon}>THIS IS A CHILD</h1>
+        </div>
     );
 }
 

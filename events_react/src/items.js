@@ -10,7 +10,15 @@ export default function Item(props){
     function eventHandle(){
         console.log(title);
         setItem('other');
+        props.data(obj);
     }
+
+    const obj = {
+        title : props.title,
+        amount : props.amount,
+        date : props.date
+    };
+
 
     return(
         <Card className = "item_card">

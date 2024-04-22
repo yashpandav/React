@@ -31,10 +31,15 @@ function App() {
     },
   ];
 
+  function mainApp(product){
+    console.log("MAIN APP");
+    console.log(product);
+  }
+
   return(
     <div>
       <ProductForm></ProductForm>
-      <Product items={products} />
+      <Product items={products} productCall = {mainApp} />
     </div>
   ); 
 }

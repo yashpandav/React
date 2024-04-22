@@ -8,10 +8,12 @@ export default function ProductForm(){
     const [newDate , setDate] = useState('');
     
     function newTitleHandler(event){
+        console.log(event.target.value);
         setTitle(event.target.value);
     }
 
     function newDateHandler(event){
+        console.log(event.target.value);
         setDate(event.target.value);
     }
 

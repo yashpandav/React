@@ -1,16 +1,15 @@
 import './App.css';
 import { useState } from 'react';
+import Compo from './compo.js';
 
 function App() {
-
   const [count , setCount] = useState(0);
 
-  function decreseHandler(){
+  function decreaseHandler(count){ 
     setCount(count - 1);  
   }
-
   
-  function increseHandler(){
+  function increaseHandler(count){
     setCount(count + 1);
   }
 
@@ -21,13 +20,7 @@ function App() {
   return (
     <div id='main'>
       <h1>Increment 😁 Decrement</h1>
-      <div id='container'>
-        <button type='button' onClick={decreseHandler}>-</button>
-        <div>
-          <h3>{count}</h3>
-        </div>
-        <button type='button' onClick={increseHandler}>+</button>
-      </div>
+      <Compo increase={increaseHandler} decrease={decreaseHandler} total={count}/>
       <button type='button' onClick={resetHandler}>Reset</button>
     </div>
   );

@@ -1,0 +1,13 @@
+nav{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(5, 5, 57, 0.551);
+}
+
+h1{
+    color: aliceblue;
+    font-size : 30px;
+}

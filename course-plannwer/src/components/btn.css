@@ -1,0 +1,25 @@
+.btn{
+    background-color: azure;
+    border: 0px;
+    margin: 10px;
+    font-size: 13px;
+    width: 9vw;
+    height: 2vw;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 3%;
+    border-radius: 5px;
+}
+
+#filterData{
+    display: flex;
+    justify-content :center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.btn:hover{
+    background-color: rgba(80, 80, 168, 0.551);
+    color: aliceblue;
+    box-shadow: 2px 2px 2px white ,  -2px 2px 2px white ,  2px -2px 2px white  ,  -2px -2px 2px white ;
+}

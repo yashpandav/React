@@ -1,0 +1,16 @@
+#card{
+    width: 20vw;
+    background-color: #373761;
+    border-radius: 10px;
+}
+
+img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+}
+
+#text{  
+    color: rgb(255, 254, 252);
+    margin-left: 10px;
+}       
